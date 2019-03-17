@@ -274,9 +274,9 @@
       "styles": {},
       "props": [
         {
-          "name": "buttonText",
+          "name": "buttonLabel",
           "type": "String",
-          "attr": "button-text"
+          "attr": "button-label"
         },
         {
           "name": "scrollDelay",

@@ -6,7 +6,7 @@ export declare class MicrobitText {
     /**
      * The text shown on the button
      */
-    buttonText: string;
+    buttonLabel: string;
     /**
      * The speed to scroll the text
      */
@@ -15,6 +15,6 @@ export declare class MicrobitText {
     private text;
     watchHandler(): Promise<void>;
     render(): JSX.Element;
-    private handleChange;
-    private handleSubmit;
+    private handleKeyPress;
+    private writeText;
 }

@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.pbzaedr3.js",
-  "corePolyfilled": "microbit.wbpvnzft.js",
+  "core": "microbit.m8eqvugf.js",
+  "corePolyfilled": "microbit.g8fohfjp.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -42,7 +42,7 @@
     },
     "microbit-name": {
       "bundleIds": {
-        "$": "ozyzokjr"
+        "$": "6xiy26lc"
       }
     },
     "microbit-serial": {
@@ -57,7 +57,7 @@
     },
     "microbit-text": {
       "bundleIds": {
-        "$": "plre7ctq"
+        "$": "enea2ibr"
       }
     }
   }

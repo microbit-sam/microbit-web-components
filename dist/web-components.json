@@ -42,7 +42,7 @@
       "description": "",
       "attributes": [
         {
-          "label": "button-text",
+          "label": "button-label",
           "description": "The text shown on the button",
           "required": false
         },

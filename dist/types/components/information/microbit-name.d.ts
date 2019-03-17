@@ -1,4 +1,3 @@
-import '../../stencil.core';
 /// <reference types="web-bluetooth" />
 export declare class MicrobitName {
     el: any;
@@ -7,6 +6,5 @@ export declare class MicrobitName {
      * The text shown when disconnected
      */
     disconnectedText: string;
-    render(): JSX.Element;
-    private getText;
+    render(): string;
 }

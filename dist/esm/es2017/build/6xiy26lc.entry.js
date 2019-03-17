@@ -1,5 +1,8 @@
-import DeviceTunnel from '../../device-tunnel';
-export class MicrobitName {
+import { h } from '../microbit.core.js';
+
+import { a as DeviceTunnel } from './chunk-3d8ed500.js';
+
+class MicrobitName {
     constructor() {
         this.device = undefined;
         this.disconnectedText = "Disconnected";
@@ -23,3 +26,5 @@ export class MicrobitName {
     }; }
 }
 DeviceTunnel.injectProps(MicrobitName, ['device']);
+
+export { MicrobitName };

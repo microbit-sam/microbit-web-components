@@ -1,5 +1,8 @@
-import DeviceTunnel from '../../device-tunnel';
-export class MicrobitText {
+import { h } from '../microbit.core.js';
+
+import { a as DeviceTunnel } from './chunk-3d8ed500.js';
+
+class MicrobitText {
     constructor() {
         this.services = undefined;
         this.buttonLabel = "";
@@ -57,3 +60,5 @@ export class MicrobitText {
     }; }
 }
 DeviceTunnel.injectProps(MicrobitText, ['services']);
+
+export { MicrobitText };
