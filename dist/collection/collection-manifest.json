@@ -21,6 +21,32 @@
       ]
     },
     {
+      "tag": "microbit-compass",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitCompass",
+      "componentPath": "components/data/microbit-compass.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "bearing"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
       "tag": "microbit-connect",
       "dependencies": [
         "context-consumer"
@@ -217,6 +243,116 @@
           "name": "noInfo",
           "type": "String",
           "attr": "no-info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-state-button-a",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitStateButtonA",
+      "componentPath": "components/state/microbit-state-button-a.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "longPressClass",
+          "type": "String",
+          "attr": "long-press-class"
+        },
+        {
+          "name": "releaseClass",
+          "type": "String",
+          "attr": "release-class"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        },
+        {
+          "name": "shortPressClass",
+          "type": "String",
+          "attr": "short-press-class"
+        }
+      ],
+      "states": [
+        {
+          "name": "className"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-state-button-b",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitStateButtonB",
+      "componentPath": "components/state/microbit-state-button-b.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "longPressClass",
+          "type": "String",
+          "attr": "long-press-class"
+        },
+        {
+          "name": "releaseClass",
+          "type": "String",
+          "attr": "release-class"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        },
+        {
+          "name": "shortPressClass",
+          "type": "String",
+          "attr": "short-press-class"
+        }
+      ],
+      "states": [
+        {
+          "name": "className"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-state-connection",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitStateConnection",
+      "componentPath": "components/state/microbit-state-connection.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "connectedClass",
+          "type": "String",
+          "attr": "connected-class"
+        },
+        {
+          "name": "device",
+          "attr": "device"
+        },
+        {
+          "name": "disconnectedClass",
+          "type": "String",
+          "attr": "disconnected-class"
         }
       ],
       "hostElement": {

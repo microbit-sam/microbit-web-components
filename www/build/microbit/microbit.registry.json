@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.m8eqvugf.js",
-  "corePolyfilled": "microbit.g8fohfjp.js",
+  "core": "microbit.guupm46b.js",
+  "corePolyfilled": "microbit.ip1awurw.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -13,6 +13,11 @@
     "microbit-app": {
       "bundleIds": {
         "$": "ydh4pgwz"
+      }
+    },
+    "microbit-compass": {
+      "bundleIds": {
+        "$": "eunojejn"
       }
     },
     "microbit-connect": {
@@ -48,6 +53,21 @@
     "microbit-serial": {
       "bundleIds": {
         "$": "qgdwc5hl"
+      }
+    },
+    "microbit-state-button-a": {
+      "bundleIds": {
+        "$": "1hhfm83n"
+      }
+    },
+    "microbit-state-button-b": {
+      "bundleIds": {
+        "$": "m0z9tedh"
+      }
+    },
+    "microbit-state-connection": {
+      "bundleIds": {
+        "$": "6ufvumt3"
       }
     },
     "microbit-temperature": {

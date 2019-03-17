@@ -1,25 +1,9 @@
 {
   "tags": [
     {
-      "label": "microbit-temperature",
+      "label": "microbit-compass",
       "description": "",
-      "attributes": [
-        {
-          "label": "disconnected-text",
-          "description": "The text shown when disconnected",
-          "required": false
-        },
-        {
-          "label": "no-temperature",
-          "description": "The text shown when no temperature",
-          "required": false
-        },
-        {
-          "label": "temperature-period",
-          "description": "The interval to check the temperature (ms)",
-          "required": false
-        }
-      ]
+      "attributes": []
     },
     {
       "label": "microbit-firmware",
@@ -57,6 +41,27 @@
       "label": "microbit-app",
       "description": "",
       "attributes": []
+    },
+    {
+      "label": "microbit-state-button-a",
+      "description": "",
+      "attributes": [
+        {
+          "label": "long-press-class",
+          "description": "The css class to use when long-pressed",
+          "required": false
+        },
+        {
+          "label": "release-class",
+          "description": "The css class to use when released",
+          "required": false
+        },
+        {
+          "label": "short-press-class",
+          "description": "The css class to use when short-pressed",
+          "required": false
+        }
+      ]
     }
   ]
 }
