@@ -13,6 +13,9 @@
           "name": "device"
         },
         {
+          "name": "deviceInformation"
+        },
+        {
           "name": "services"
         }
       ]
@@ -45,6 +48,10 @@
           "attr": "set-device"
         },
         {
+          "name": "setDeviceInformation",
+          "attr": "set-device-information"
+        },
+        {
           "name": "setServices",
           "attr": "set-services"
         }
@@ -59,9 +66,13 @@
         "context-consumer"
       ],
       "componentClass": "MicrobitFirmware",
-      "componentPath": "components/microbit-firmware.js",
+      "componentPath": "components/information/microbit-firmware.js",
       "styles": {},
       "props": [
+        {
+          "name": "deviceInformation",
+          "attr": "device-information"
+        },
         {
           "name": "disconnectedText",
           "type": "String",
@@ -71,18 +82,6 @@
           "name": "noInfo",
           "type": "String",
           "attr": "no-info"
-        },
-        {
-          "name": "services",
-          "attr": "services",
-          "watch": [
-            "watchHandler"
-          ]
-        }
-      ],
-      "states": [
-        {
-          "name": "info"
         }
       ],
       "hostElement": {
@@ -90,19 +89,98 @@
       }
     },
     {
-      "tag": "microbit-status",
+      "tag": "microbit-hardware",
       "dependencies": [
         "context-consumer"
       ],
-      "componentClass": "MicrobitStatus",
-      "componentPath": "components/microbit-status.js",
+      "componentClass": "MicrobitHardware",
+      "componentPath": "components/information/microbit-hardware.js",
       "styles": {},
       "props": [
         {
-          "name": "connectedText",
-          "type": "String",
-          "attr": "connected-text"
+          "name": "deviceInformation",
+          "attr": "device-information"
         },
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noInfo",
+          "type": "String",
+          "attr": "no-info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-manufacturer",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitManufacturer",
+      "componentPath": "components/information/microbit-manufacturer.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "deviceInformation",
+          "attr": "device-information"
+        },
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noInfo",
+          "type": "String",
+          "attr": "no-info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-model",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitModel",
+      "componentPath": "components/information/microbit-model.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "deviceInformation",
+          "attr": "device-information"
+        },
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noInfo",
+          "type": "String",
+          "attr": "no-info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-name",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitName",
+      "componentPath": "components/information/microbit-name.js",
+      "styles": {},
+      "props": [
         {
           "name": "device",
           "attr": "device"
@@ -118,12 +196,40 @@
       }
     },
     {
+      "tag": "microbit-serial",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitSerial",
+      "componentPath": "components/information/microbit-serial.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "deviceInformation",
+          "attr": "device-information"
+        },
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noInfo",
+          "type": "String",
+          "attr": "no-info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
       "tag": "microbit-temperature",
       "dependencies": [
         "context-consumer"
       ],
       "componentClass": "MicrobitTemperature",
-      "componentPath": "components/microbit-temperature.js",
+      "componentPath": "components/data/microbit-temperature.js",
       "styles": {},
       "props": [
         {
@@ -164,7 +270,7 @@
         "context-consumer"
       ],
       "componentClass": "MicrobitText",
-      "componentPath": "components/microbit-text.js",
+      "componentPath": "components/led/microbit-text.js",
       "styles": {},
       "props": [
         {

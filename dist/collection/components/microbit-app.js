@@ -1,21 +1,27 @@
-import DeviceTunnel from '../data/device-tunnel';
+import DeviceTunnel from '../device-tunnel';
 export class MicrobitApp {
     constructor() {
         this.device = undefined;
         this.services = undefined;
+        this.deviceInformation = undefined;
         this.setDevice = (device) => {
             this.device = device;
         };
         this.setServices = (services) => {
             this.services = services;
         };
+        this.setDeviceInformation = (deviceInformation) => {
+            this.deviceInformation = deviceInformation;
+        };
     }
     render() {
         const deviceState = {
             device: this.device,
             services: this.services,
+            deviceInformation: this.deviceInformation,
             setDevice: this.setDevice,
-            setServices: this.setServices
+            setServices: this.setServices,
+            setDeviceInformation: this.setDeviceInformation
         };
         return (h(DeviceTunnel.Provider, { state: deviceState },
             h("slot", null)));
@@ -23,6 +29,9 @@ export class MicrobitApp {
     static get is() { return "microbit-app"; }
     static get properties() { return {
         "device": {
+            "state": true
+        },
+        "deviceInformation": {
             "state": true
         },
         "services": {

@@ -1,5 +1,5 @@
 import { requestMicrobit, getServices } from "microbit-web-bluetooth";
-import DeviceTunnel from '../data/device-tunnel';
+import DeviceTunnel from '../device-tunnel';
 export class MicrobitConnect {
     constructor() {
         this.device = undefined;
@@ -19,6 +19,7 @@ export class MicrobitConnect {
             }
             this.setDevice(undefined);
             this.setServices(undefined);
+            this.setDeviceInformation(undefined);
             return;
         }
         const device = await requestMicrobit(window.navigator.bluetooth);
@@ -26,6 +27,10 @@ export class MicrobitConnect {
             this.setDevice(device);
             const services = await getServices(device);
             this.setServices(services);
+            if (services.deviceInformationService) {
+                const deviceInformation = await services.deviceInformationService.readDeviceInformation();
+                this.setDeviceInformation(deviceInformation);
+            }
         }
     }
     static get is() { return "microbit-connect"; }
@@ -49,10 +54,14 @@ export class MicrobitConnect {
             "type": "Any",
             "attr": "set-device"
         },
+        "setDeviceInformation": {
+            "type": "Any",
+            "attr": "set-device-information"
+        },
         "setServices": {
             "type": "Any",
             "attr": "set-services"
         }
     }; }
 }
-DeviceTunnel.injectProps(MicrobitConnect, ['device', 'setDevice', 'setServices']);
+DeviceTunnel.injectProps(MicrobitConnect, ['device', 'setDevice', 'setServices', 'setDeviceInformation']);

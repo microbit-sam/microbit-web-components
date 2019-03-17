@@ -1,6 +1,59 @@
 {
   "tags": [
     {
+      "label": "microbit-temperature",
+      "description": "",
+      "attributes": [
+        {
+          "label": "disconnected-text",
+          "description": "The text shown when disconnected",
+          "required": false
+        },
+        {
+          "label": "no-temperature",
+          "description": "The text shown when no temperature",
+          "required": false
+        },
+        {
+          "label": "temperature-period",
+          "description": "The interval to check the temperature (ms)",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "microbit-firmware",
+      "description": "",
+      "attributes": [
+        {
+          "label": "disconnected-text",
+          "description": "The text shown when disconnected",
+          "required": false
+        },
+        {
+          "label": "no-info",
+          "description": "The text shown when no firmware version",
+          "required": false
+        }
+      ]
+    },
+    {
+      "label": "microbit-text",
+      "description": "",
+      "attributes": [
+        {
+          "label": "button-text",
+          "description": "The text shown on the button",
+          "required": false
+        },
+        {
+          "label": "scroll-delay",
+          "description": "The speed to scroll the text",
+          "required": false
+        }
+      ]
+    },
+    {
       "label": "microbit-app",
       "description": "",
       "attributes": []

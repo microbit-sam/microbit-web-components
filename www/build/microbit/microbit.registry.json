@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.q3sckotd.js",
-  "corePolyfilled": "microbit.1y3g8x2r.js",
+  "core": "microbit.pbzaedr3.js",
+  "corePolyfilled": "microbit.wbpvnzft.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -12,32 +12,52 @@
     },
     "microbit-app": {
       "bundleIds": {
-        "$": "1g3bhvoe"
+        "$": "ydh4pgwz"
       }
     },
     "microbit-connect": {
       "bundleIds": {
-        "$": "oesv34dz"
+        "$": "hfezti20"
       }
     },
     "microbit-firmware": {
       "bundleIds": {
-        "$": "sswsxwvu"
+        "$": "zpv6ke03"
       }
     },
-    "microbit-status": {
+    "microbit-hardware": {
       "bundleIds": {
-        "$": "4n2sb59s"
+        "$": "3bvuy434"
+      }
+    },
+    "microbit-manufacturer": {
+      "bundleIds": {
+        "$": "mq2soguj"
+      }
+    },
+    "microbit-model": {
+      "bundleIds": {
+        "$": "1byxevky"
+      }
+    },
+    "microbit-name": {
+      "bundleIds": {
+        "$": "ozyzokjr"
+      }
+    },
+    "microbit-serial": {
+      "bundleIds": {
+        "$": "qgdwc5hl"
       }
     },
     "microbit-temperature": {
       "bundleIds": {
-        "$": "o82p4hnm"
+        "$": "quizjzx6"
       }
     },
     "microbit-text": {
       "bundleIds": {
-        "$": "vhibmjkf"
+        "$": "plre7ctq"
       }
     }
   }
