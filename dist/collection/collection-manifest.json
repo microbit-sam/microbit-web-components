@@ -1,0 +1,212 @@
+{
+  "components": [
+    {
+      "tag": "microbit-app",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitApp",
+      "componentPath": "components/microbit-app.js",
+      "styles": {},
+      "states": [
+        {
+          "name": "device"
+        },
+        {
+          "name": "services"
+        }
+      ]
+    },
+    {
+      "tag": "microbit-connect",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitConnect",
+      "componentPath": "components/microbit-connect.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "connectLabel",
+          "type": "String",
+          "attr": "connect-label"
+        },
+        {
+          "name": "device",
+          "attr": "device"
+        },
+        {
+          "name": "disconnectLabel",
+          "type": "String",
+          "attr": "disconnect-label"
+        },
+        {
+          "name": "setDevice",
+          "attr": "set-device"
+        },
+        {
+          "name": "setServices",
+          "attr": "set-services"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-firmware",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitFirmware",
+      "componentPath": "components/microbit-firmware.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noInfo",
+          "type": "String",
+          "attr": "no-info"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "info"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-status",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitStatus",
+      "componentPath": "components/microbit-status.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "connectedText",
+          "type": "String",
+          "attr": "connected-text"
+        },
+        {
+          "name": "device",
+          "attr": "device"
+        },
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-temperature",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitTemperature",
+      "componentPath": "components/microbit-temperature.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "disconnectedText",
+          "type": "String",
+          "attr": "disconnected-text"
+        },
+        {
+          "name": "noTemperature",
+          "type": "String",
+          "attr": "no-temperature"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        },
+        {
+          "name": "temperaturePeriod",
+          "type": "Number",
+          "attr": "temperature-period"
+        }
+      ],
+      "states": [
+        {
+          "name": "temperature"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
+      "tag": "microbit-text",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitText",
+      "componentPath": "components/microbit-text.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "buttonText",
+          "type": "String",
+          "attr": "button-text"
+        },
+        {
+          "name": "scrollDelay",
+          "type": "Number",
+          "attr": "scroll-delay"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "disabled"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    }
+  ],
+  "collections": [
+    {
+      "name": "@stencil/state-tunnel",
+      "tags": [
+        "context-consumer"
+      ]
+    }
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.18.1",
+    "typescriptVersion": "3.3.3"
+  },
+  "bundles": []
+}

@@ -1,0 +1,44 @@
+{
+  "namespace": "microbit",
+  "fsNamespace": "microbit",
+  "loader": "../microbit.js",
+  "core": "microbit.q3sckotd.js",
+  "corePolyfilled": "microbit.1y3g8x2r.js",
+  "components": {
+    "context-consumer": {
+      "bundleIds": {
+        "$": "ye0ydyx1"
+      }
+    },
+    "microbit-app": {
+      "bundleIds": {
+        "$": "1g3bhvoe"
+      }
+    },
+    "microbit-connect": {
+      "bundleIds": {
+        "$": "oesv34dz"
+      }
+    },
+    "microbit-firmware": {
+      "bundleIds": {
+        "$": "sswsxwvu"
+      }
+    },
+    "microbit-status": {
+      "bundleIds": {
+        "$": "4n2sb59s"
+      }
+    },
+    "microbit-temperature": {
+      "bundleIds": {
+        "$": "o82p4hnm"
+      }
+    },
+    "microbit-text": {
+      "bundleIds": {
+        "$": "vhibmjkf"
+      }
+    }
+  }
+}

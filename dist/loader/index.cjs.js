@@ -1,0 +1,1 @@
+module.exports = require('../cjs/es5/microbit.define.js');
