@@ -9,6 +9,7 @@ export class MicrobitCompass {
             return;
         }
         const service = this.services.magnetometerService;
+        this.bearing = await service.getMagnetometerBearing();
         service.addEventListener("magnetometerbearingchanged", event => this.bearing = event.detail);
     }
     render() {

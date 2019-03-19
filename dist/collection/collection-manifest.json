@@ -360,6 +360,52 @@
       }
     },
     {
+      "tag": "microbit-state-movement",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitStateMovement",
+      "componentPath": "components/state/microbit-state-movement.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "frequency",
+          "type": "Number",
+          "attr": "frequency"
+        },
+        {
+          "name": "movedClass",
+          "type": "String",
+          "attr": "moved-class"
+        },
+        {
+          "name": "sensitivity",
+          "type": "Number",
+          "attr": "sensitivity"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        },
+        {
+          "name": "stillClass",
+          "type": "String",
+          "attr": "still-class"
+        }
+      ],
+      "states": [
+        {
+          "name": "className"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
       "tag": "microbit-temperature",
       "dependencies": [
         "context-consumer"

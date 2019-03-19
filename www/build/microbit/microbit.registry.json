@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.guupm46b.js",
-  "corePolyfilled": "microbit.ip1awurw.js",
+  "core": "microbit.6jrgmykl.js",
+  "corePolyfilled": "microbit.iflw3z5w.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -17,7 +17,7 @@
     },
     "microbit-compass": {
       "bundleIds": {
-        "$": "eunojejn"
+        "$": "6e9drmdh"
       }
     },
     "microbit-connect": {
@@ -57,12 +57,12 @@
     },
     "microbit-state-button-a": {
       "bundleIds": {
-        "$": "1hhfm83n"
+        "$": "seurvebe"
       }
     },
     "microbit-state-button-b": {
       "bundleIds": {
-        "$": "m0z9tedh"
+        "$": "ao2gzrg1"
       }
     },
     "microbit-state-connection": {
@@ -70,9 +70,14 @@
         "$": "6ufvumt3"
       }
     },
+    "microbit-state-movement": {
+      "bundleIds": {
+        "$": "oj7fmqju"
+      }
+    },
     "microbit-temperature": {
       "bundleIds": {
-        "$": "quizjzx6"
+        "$": "qqmnflny"
       }
     },
     "microbit-text": {

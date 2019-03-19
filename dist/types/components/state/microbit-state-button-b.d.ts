@@ -16,6 +16,7 @@ export declare class MicrobitStateButtonB {
      */
     longPressClass: string;
     className: string;
-    watchHandler(): void;
+    watchHandler(): Promise<void>;
     render(): JSX.Element;
+    private setClassName;
 }

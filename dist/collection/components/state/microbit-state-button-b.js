@@ -7,21 +7,24 @@ export class MicrobitStateButtonB {
         this.longPressClass = "microbit-long-press";
         this.className = this.releaseClass;
     }
-    watchHandler() {
+    async watchHandler() {
         if (!this.services || !this.services.buttonService) {
             this.className = this.releaseClass;
             return;
         }
         const service = this.services.buttonService;
-        service.addEventListener("buttonbstatechanged", event => {
-            this.className = event.detail === 1 ? this.shortPressClass
-                : event.detail === 2 ? this.longPressClass
-                    : this.releaseClass;
-        });
+        const state = await service.readButtonBState();
+        this.setClassName(state);
+        service.addEventListener("buttonbstatechanged", event => this.setClassName(event.detail));
     }
     render() {
         return (h("span", { class: this.className },
             h("slot", null)));
+    }
+    setClassName(state) {
+        this.className = state === 1 ? this.shortPressClass
+            : state === 2 ? this.longPressClass
+                : this.releaseClass;
     }
     static get is() { return "microbit-state-button-b"; }
     static get properties() { return {
