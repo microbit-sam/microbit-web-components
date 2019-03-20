@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.ketyrla2.js",
-  "corePolyfilled": "microbit.gvzjk7uw.js",
+  "core": "microbit.ktyufzlc.js",
+  "corePolyfilled": "microbit.x9nqwo5x.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -42,7 +42,7 @@
     },
     "microbit-matrix": {
       "bundleIds": {
-        "$": "2o0tohwx"
+        "$": "ckfy5tcg"
       }
     },
     "microbit-model": {

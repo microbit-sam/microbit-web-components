@@ -1,4 +1,3 @@
-import '../../stencil.core';
 import { Services } from "microbit-web-bluetooth";
 export declare class MicrobitMatrix {
     el: any;
@@ -18,7 +17,6 @@ export declare class MicrobitMatrix {
     private matrix;
     private elements;
     watchHandler(): Promise<void>;
-    render(): JSX.Element;
     private toggle;
     private updateMatrix;
 }

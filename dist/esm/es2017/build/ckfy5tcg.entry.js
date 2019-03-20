@@ -1,5 +1,8 @@
-import DeviceTunnel from '../../device-tunnel';
-export class MicrobitMatrix {
+import { h } from '../microbit.core.js';
+
+import { a as DeviceTunnel } from './chunk-3d8ed500.js';
+
+class MicrobitMatrix {
     constructor() {
         this.services = undefined;
         this.idTemplate = "microbit-matrix-${row}-${column}";
@@ -68,3 +71,5 @@ export class MicrobitMatrix {
     }; }
 }
 DeviceTunnel.injectProps(MicrobitMatrix, ['services']);
+
+export { MicrobitMatrix };
