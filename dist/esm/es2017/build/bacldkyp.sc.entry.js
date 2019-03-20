@@ -1,5 +1,8 @@
-import DeviceTunnel from '../../device-tunnel';
-export class MicrobitStateMovement {
+import { h } from '../microbit.core.js';
+
+import { a as DeviceTunnel } from './chunk-3d8ed500.js';
+
+class MicrobitStateMovement {
     constructor() {
         this.services = undefined;
         this.sensitivity = 1;
@@ -62,3 +65,5 @@ export class MicrobitStateMovement {
     }; }
 }
 DeviceTunnel.injectProps(MicrobitStateMovement, ['services']);
+
+export { MicrobitStateMovement };

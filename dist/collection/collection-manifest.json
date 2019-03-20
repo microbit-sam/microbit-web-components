@@ -171,6 +171,42 @@
       }
     },
     {
+      "tag": "microbit-matrix",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitMatrix",
+      "componentPath": "components/led/microbit-matrix.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "idTemplate",
+          "type": "String",
+          "attr": "id-template"
+        },
+        {
+          "name": "offClass",
+          "type": "String",
+          "attr": "off-class"
+        },
+        {
+          "name": "onClass",
+          "type": "String",
+          "attr": "on-class"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
       "tag": "microbit-model",
       "dependencies": [
         "context-consumer"

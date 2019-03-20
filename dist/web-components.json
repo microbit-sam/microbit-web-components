@@ -22,17 +22,22 @@
       ]
     },
     {
-      "label": "microbit-text",
+      "label": "microbit-matrix",
       "description": "",
       "attributes": [
         {
-          "label": "button-label",
-          "description": "The text shown on the button",
+          "label": "id-template",
+          "description": "The template for identifying child LEDs",
           "required": false
         },
         {
-          "label": "scroll-delay",
-          "description": "The speed to scroll the text",
+          "label": "off-class",
+          "description": "The css class for off LEDs",
+          "required": false
+        },
+        {
+          "label": "on-class",
+          "description": "The css class for on LEDs",
           "required": false
         }
       ]

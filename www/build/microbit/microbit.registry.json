@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.6jrgmykl.js",
-  "corePolyfilled": "microbit.iflw3z5w.js",
+  "core": "microbit.ketyrla2.js",
+  "corePolyfilled": "microbit.gvzjk7uw.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -22,7 +22,7 @@
     },
     "microbit-connect": {
       "bundleIds": {
-        "$": "hfezti20"
+        "$": "h5ahnalr"
       }
     },
     "microbit-firmware": {
@@ -38,6 +38,11 @@
     "microbit-manufacturer": {
       "bundleIds": {
         "$": "mq2soguj"
+      }
+    },
+    "microbit-matrix": {
+      "bundleIds": {
+        "$": "2o0tohwx"
       }
     },
     "microbit-model": {
@@ -72,7 +77,7 @@
     },
     "microbit-state-movement": {
       "bundleIds": {
-        "$": "oj7fmqju"
+        "$": "bacldkyp"
       }
     },
     "microbit-temperature": {
