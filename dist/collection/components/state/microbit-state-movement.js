@@ -17,7 +17,7 @@ export class MicrobitStateMovement {
         await service.setAccelerometerPeriod(this.frequency);
         const data = await service.readAccelerometerData();
         this.setClassName(data);
-        service.addEventListener("accelerometerdatachanged", event => this.setClassName(event.detail));
+        await service.addEventListener("accelerometerdatachanged", event => this.setClassName(event.detail));
     }
     render() {
         return (h("span", { class: this.className },

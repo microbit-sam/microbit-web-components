@@ -30,8 +30,8 @@ export class MicrobitText {
             this.text = event.target.value;
         }
     }
-    writeText() {
-        this.services.ledService.writeText(this.text);
+    async writeText() {
+        await this.services.ledService.writeText(this.text);
     }
     static get is() { return "microbit-text"; }
     static get properties() { return {

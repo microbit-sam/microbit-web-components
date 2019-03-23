@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.ktyufzlc.js",
-  "corePolyfilled": "microbit.x9nqwo5x.js",
+  "core": "microbit.veclivdb.js",
+  "corePolyfilled": "microbit.yeoed8zx.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -17,7 +17,7 @@
     },
     "microbit-compass": {
       "bundleIds": {
-        "$": "6e9drmdh"
+        "$": "rxnkfi5i"
       }
     },
     "microbit-connect": {
@@ -42,7 +42,7 @@
     },
     "microbit-matrix": {
       "bundleIds": {
-        "$": "ckfy5tcg"
+        "$": "8mqc1pnq"
       }
     },
     "microbit-model": {
@@ -62,12 +62,12 @@
     },
     "microbit-state-button-a": {
       "bundleIds": {
-        "$": "seurvebe"
+        "$": "lcnu3gub"
       }
     },
     "microbit-state-button-b": {
       "bundleIds": {
-        "$": "ao2gzrg1"
+        "$": "icwlryww"
       }
     },
     "microbit-state-connection": {
@@ -77,17 +77,17 @@
     },
     "microbit-state-movement": {
       "bundleIds": {
-        "$": "bacldkyp"
+        "$": "npprrjhv"
       }
     },
     "microbit-temperature": {
       "bundleIds": {
-        "$": "qqmnflny"
+        "$": "wb5csnrm"
       }
     },
     "microbit-text": {
       "bundleIds": {
-        "$": "enea2ibr"
+        "$": "ie6p4aq3"
       }
     }
   }
