@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.veclivdb.js",
-  "corePolyfilled": "microbit.yeoed8zx.js",
+  "core": "microbit.n7hoaxtw.js",
+  "corePolyfilled": "microbit.3npdm1k1.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -22,7 +22,7 @@
     },
     "microbit-connect": {
       "bundleIds": {
-        "$": "h5ahnalr"
+        "$": "ykuei6jn"
       }
     },
     "microbit-firmware": {
