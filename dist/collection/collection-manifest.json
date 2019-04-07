@@ -21,6 +21,37 @@
       ]
     },
     {
+      "tag": "microbit-calibrate",
+      "dependencies": [
+        "context-consumer"
+      ],
+      "componentClass": "MicrobitCalibrate",
+      "componentPath": "components/microbit-calibrate.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "calibrateLabel",
+          "type": "String",
+          "attr": "calibrate-label"
+        },
+        {
+          "name": "services",
+          "attr": "services",
+          "watch": [
+            "watchHandler"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "disabled"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      }
+    },
+    {
       "tag": "microbit-compass",
       "dependencies": [
         "context-consumer"

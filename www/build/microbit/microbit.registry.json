@@ -2,8 +2,8 @@
   "namespace": "microbit",
   "fsNamespace": "microbit",
   "loader": "../microbit.js",
-  "core": "microbit.n7hoaxtw.js",
-  "corePolyfilled": "microbit.3npdm1k1.js",
+  "core": "microbit.x33j7cwv.js",
+  "corePolyfilled": "microbit.ggq1eb5x.js",
   "components": {
     "context-consumer": {
       "bundleIds": {
@@ -13,6 +13,11 @@
     "microbit-app": {
       "bundleIds": {
         "$": "ydh4pgwz"
+      }
+    },
+    "microbit-calibrate": {
+      "bundleIds": {
+        "$": "atti4jkb"
       }
     },
     "microbit-compass": {
